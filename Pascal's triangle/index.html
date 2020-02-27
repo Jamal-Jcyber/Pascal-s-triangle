@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0 auto;
+        }
+ 
+        .block {
+            display: inline-block;
+            position: relative;
+            border: 1px solid grey;
+            text-align: center;
+            font-size: .8em;
+            width: 2em;
+        }
+ 
+        .divblock {
+            text-align: center;
+            vertical-align: middle;
+        }
+ 
+        #pascal {
+            margin: 0 auto;
+            text-align: center;
+        }
+ 
+        .block:nth-child(odd) {
+            background: rgb(31, 138, 138);
+        }
+ 
+        .block:nth-child(even) {
+            background: rgb(221, 33, 33);
+        }
+    </style>
+   
+</head>
+ 
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter number of rows for pascal Triangle" style="width:80%" id="numRows">
+        <input type="button" " value="Go " name="Go " onClick="printPascalTriangle() ">
+        <div id="pascal"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
